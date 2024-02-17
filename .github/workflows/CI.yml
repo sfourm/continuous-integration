@@ -20,7 +20,7 @@ jobs:
 
       - name: Run tests
         run: npm test
-        
+
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
 
@@ -38,4 +38,4 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: false
-          tags: wesleywillians/fc2.0-ci-go:latest  
+          tags: sfourm/continuous-integration:latest  
